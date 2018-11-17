@@ -1,0 +1,22 @@
+﻿@model WebApplication5.Models.Actions
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AllAction</title>
+</head>
+<body>
+    <div> 
+        @foreach (var item in Model.actionList)
+        {
+            <div>@item</div>
+        }
+    </div>
+</body>
+</html>
