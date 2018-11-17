@@ -1,0 +1,23 @@
+﻿@model WebApplication4.Models.Calculation
+
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    @*<meta name="viewport" content="width=device-width" />
+    <title>GetAddition</title>*@
+</head>
+<body>
+    <div>
+        Addition:<br />
+        @using (Html.BeginForm())
+        {
+            @Html.EditorForModel();
+            <input type="submit" name="Add the numbers" />
+        }
+    </div>
+
+</body>
+</html>
